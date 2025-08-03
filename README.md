@@ -42,7 +42,7 @@ GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
 
 # Database Connection
-DATABASE_URL="postgresql://username:password@localhost:5432/neetcode"
+DATABASE_URL="postgresql://username:password@localhost:5432/brocode"
 
 # Optional: Judge0 API (Code Execution)
 JUDGE0_API_KEY=your-judge0-api-key
@@ -53,8 +53,8 @@ JUDGE0_API_URL=https://judge0-ce.p.rapidapi.com
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/neetcode-platform.git
-   cd neetcode-platform
+   git clone https://github.com/kiranchoudharyy/BroCode.git
+   cd brocode
    ```
 
 2. Install dependencies:
