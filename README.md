@@ -33,20 +33,33 @@ This is a feature-rich, full-stack web application designed to help users practi
 Create a `.env` file in the root directory with the following variables:
 
 ```
+# PostgreSQL Database
+DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/<database>?connect_timeout=300"
+DIRECT_URL="postgresql://<username>:<password>@<host>:<port>/<database>?connect_timeout=300"
+
+# Redis
+REDIS_URL=redis://<host>:<port>
+
 # NextAuth Configuration
-NEXTAUTH_SECRET=your-nextauth-secret-key
+NEXTAUTH_SECRET="<your_nextauth_secret>"
 NEXTAUTH_URL=http://localhost:3000
 
-# Google OAuth (optional but recommended)
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
+# Google OAuth (NextAuth)
+GOOGLE_CLIENT_ID="<your_google_client_id>"
+GOOGLE_CLIENT_SECRET="<your_google_client_secret>"
 
-# Database Connection
-DATABASE_URL="postgresql://username:password@localhost:5432/brocode"
-
-# Optional: Judge0 API (Code Execution)
-JUDGE0_API_KEY=your-judge0-api-key
+# Judge0 API (Optional)
+JUDGE0_API_KEY="<your_judge0_api_key>"
 JUDGE0_API_URL=https://judge0-ce.p.rapidapi.com
+
+# Gmail SMTP (for notifications/emails)
+EMAIL_USER="<your_email_address>"
+EMAIL_PASSWORD="<your_email_app_password>"
+
+# Public URLs
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+NEXT_PUBLIC_SOCKET_URL=http://localhost:3000
+
 ```
 
 ### Installation
